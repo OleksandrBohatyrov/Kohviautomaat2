@@ -34,6 +34,8 @@ Automaat saab hakkama mitme joogiga (kohv, tee, kakao). Lehel näidatakse vaid n
 
 ### ${\color{green}Veebisait}$
   
+** [Link Kohviautomaat veebilehele](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)**
+
 **Külalise leht**
 <br>
 <img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/1de735e6-c326-4835-a511-afae3660b5f9" alt="pilt" style="width: 50%; height: auto;">
@@ -50,7 +52,7 @@ Automaat saab hakkama mitme joogiga (kohv, tee, kakao). Lehel näidatakse vaid n
 <br>
 <img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/0020b612-20d2-4fb6-ae47-f143da5747a1" alt="admin" style="width: 50%; height: auto;">
 
-* [Link Kohviautomaat veebilehele](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)
+
 
 
 
