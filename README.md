@@ -4,7 +4,7 @@ kohviautomaadi simulatsioon c#-is
 
 ## ${\color{red}Kirjeldus}$
  - ### Projekti saab:
-   1. + Registreerida ja sisse logida kasutajana ja administratorina.
+   1. Registreerida ja sisse logida kasutajana ja administratorina.
    2. __Oosta joogid__
  - #### Administraatorile
    * ~~Pakendit lisamda~~
@@ -29,22 +29,27 @@ kohviautomaadi simulatsioon c#-is
 * Wi-Fi
 * Andmebaas
 
+
+
 ### ${\color{green}Veebisait}$
+
+* [Link Kohviautomaat veebilehele](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)
+
+  
 **Avaleht, kui admin on sissu logitud**
 <img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/d993079f-9173-4bb1-8de4-0ad7cea1fb52" alt="pilt" style="width: 50%; height: auto;">
 
 
 ### ${\color{orange}Kasutaja leht}$
-**Avaleht, kui admin on sissu logitud**
+**Avaleht, kui admin on sisse logitud**
 <img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/b3d263bd-5438-4f5d-8e18-36c7e6889d4a" alt="kasutaja" style="width: 50%; height: auto;">
 
 
 ### ${\color{pink}Admin leht}$
+**Avaleht, kui admin on sissu logitud**
 <img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/0020b612-20d2-4fb6-ae47-f143da5747a1" alt="admin" style="width: 50%; height: auto;">
 
 
-
-* [Link Kohviautomaat veebilehele](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)
 
 ### Koodi näididsed 
 
