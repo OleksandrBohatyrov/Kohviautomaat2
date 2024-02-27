@@ -44,12 +44,12 @@ kohviautomaadi simulatsioon c#-is
 
 
 
-* [Kohviautomaat](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)
+* [Link Kohviautomaat veebilehele](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)
 
-### Code
+### Koodi näididsed 
 
 
-Siin ma võtan Topsejuua väärtuse.
+Funktsioon mis tagastab  topsejuuada väärtuse andmebaaside
 ```
 function getCurrentTopsejuua($id)
 {
