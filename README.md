@@ -1,10 +1,10 @@
-# Project Title
+# Kohviautomaat
 
-Simple overview of use/purpose.
+kohviautomaadi simulatsioon c#-is
 
-## Description
-
-An in-depth paragraph about your project and overview of use.
+## Kirjeldus
+# Projektis saate:
+*
 
 ## Getting Started
 
