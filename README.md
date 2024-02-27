@@ -46,7 +46,7 @@ ex. Oleksandr Bohatyrov
 
 ## Versiooni ajalugu
 
-* See [commit change]() or See [release history]()
+* Vaata [commit change]() või Vaata [release history]()
 
 
 ## License
