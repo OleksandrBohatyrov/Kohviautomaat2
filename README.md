@@ -3,7 +3,7 @@
 kohviautomaadi simulatsioon c#-is
 
 ## ${\color{red}Kirjeldus}$
- - ### Projektis saate:
+ - ### Projektis saab:
    1. + Registreeru ja logi sisse kasutajana.
    2. __Jookide ostmiseks__
  - #### Administraatorile
@@ -25,6 +25,13 @@ kohviautomaadi simulatsioon c#-is
 ### Veebisait
 
 ![pilt](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/d993079f-9173-4bb1-8de4-0ad7cea1fb52)
+
+### Kasutaja leht
+![kasutaja](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/b3d263bd-5438-4f5d-8e18-36c7e6889d4a)
+
+### Admin leht
+![admin](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/0020b612-20d2-4fb6-ae47-f143da5747a1)
+
 
 * [Kohviautomaat](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)
 
