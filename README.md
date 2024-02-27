@@ -10,6 +10,12 @@ kohviautomaadi simulatsioon c#-is
    * Pakendite lisamine
    * Jookide lisamine ja muutmine 
 
+| Osa           | Õigused       
+| ------------- |:-------------:
+| Admin         | Pakettide lisamine ja lahtipakkimine
+| Kasutaja      | Toote ostmine      
+  
+
 
 ### Sõltuvused
 
