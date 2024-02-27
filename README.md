@@ -7,8 +7,8 @@ kohviautomaadi simulatsioon c#-is
    1. Registreeru ja logi sisse kasutajana
    2. Jookide ostmiseks
  - #### Administraatorile
-   * Pakendite lisamine
-   * Jookide lisamine ja muutmine 
+   * ~~ Pakendite lisamine ~~
+   * Jookide lisamine ja <sub>muutmine</sub> 
 
 | Osa           | Õigused       
 | ------------- |:-------------:
