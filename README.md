@@ -4,7 +4,7 @@ kohviautomaadi simulatsioon c#-is
 
 ## Kirjeldus
  - ### Projektis saate:
-   1. <span style="color: green">Registreeru ja logi sisse kasutajana </span>
+   1. + Registreeru ja logi sisse kasutajana 
    2. __Jookide ostmiseks__
  - #### Administraatorile
    * ~~Pakendite lisamine~~
