@@ -27,13 +27,15 @@ kohviautomaadi simulatsioon c#-is
 
 * Veebibrauser (Google Chrome, Firefox)
 * Wi-Fi
+* Andmebaas
 
 ### ${\color{green}Veebisait}$
-
+**Avaleht, kui admin on sissu logitud**
 <img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/d993079f-9173-4bb1-8de4-0ad7cea1fb52" alt="pilt" style="width: 50%; height: auto;">
 
 
 ### ${\color{orange}Kasutaja leht}$
+**Avaleht, kui admin on sissu logitud**
 <img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/b3d263bd-5438-4f5d-8e18-36c7e6889d4a" alt="kasutaja" style="width: 50%; height: auto;">
 
 
