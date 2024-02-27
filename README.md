@@ -24,7 +24,7 @@ kohviautomaadi simulatsioon c#-is
 
 ### Veebisait
 
-![alt text](http://url/to/img.png)
+![alt text](Main.png)
 * [Kohviautomaat](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)
 
 ### Code
