@@ -4,19 +4,21 @@ kohviautomaadi simulatsioon c#-is
 
 ## Kirjeldus
 ### Projektis saate:
-*
+   * Registreeru ja logi sisse kasutajana
+   * Jookide ostmiseks
+#### Administraatorile
+   * Pakendite lisamine
+   * Jookide lisamine ja muutmine 
 
-## Getting Started
 
-### Dependencies
+### Sõltuvused
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Veebibrauser (Google Chrome, Firefox)
+* Wi-Fi
 
-### Installing
+### Veebisait
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* (https://www.google.com)
 
 ### Executing program
 
