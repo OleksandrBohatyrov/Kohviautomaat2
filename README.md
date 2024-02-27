@@ -2,11 +2,11 @@
 
 kohviautomaadi simulatsioon c#-is
 
-_## Kirjeldus
- _### Projektis saate:
+- ## Kirjeldus
+ - ### Projektis saate:
    1. Registreeru ja logi sisse kasutajana
    2. Jookide ostmiseks
- _#### Administraatorile
+ - #### Administraatorile
    * Pakendite lisamine
    * Jookide lisamine ja muutmine 
 
