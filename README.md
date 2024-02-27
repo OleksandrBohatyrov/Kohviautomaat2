@@ -32,16 +32,13 @@ kohviautomaadi simulatsioon c#-is
 
 
 ### ${\color{green}Veebisait}$
-
-* [Link Kohviautomaat veebilehele](https://oleksandrbohatyrov22.thkit.ee/JSleht/Content/kohv/haldusleht.php)
-
   
-**Avaleht, kui admin on sissu logitud**
-<img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/d993079f-9173-4bb1-8de4-0ad7cea1fb52" alt="pilt" style="width: 50%; height: auto;">
+**Külalise leht**
+<img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/1de735e6-c326-4835-a511-afae3660b5f9" alt="pilt" style="width: 50%; height: auto;">
 
 
 ### ${\color{orange}Kasutaja leht}$
-**Avaleht, kui admin on sisse logitud**
+**Avaleht, kui kasutaja on sisse logitud**
 <img src="https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/b3d263bd-5438-4f5d-8e18-36c7e6889d4a" alt="kasutaja" style="width: 50%; height: auto;">
 
 
