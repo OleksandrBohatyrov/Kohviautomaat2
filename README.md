@@ -1,5 +1,6 @@
 # Kohviautomaat
 
+
 Automaat saab hakkama mitme joogiga (kohv, tee, kakao). Lehel näidatakse vaid neid jooke, millel on vähemasti üks tops juua. Joomise tulemusena vähendatakse vastava joogi olemasolevate topside loendurit. Halduslehel saab joodavate topside arvu kogust suurendada täitepaki jagu.
 
 ## ${\color{red}Kirjeldus}$
