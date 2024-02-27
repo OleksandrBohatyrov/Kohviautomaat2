@@ -3,7 +3,7 @@
 kohviautomaadi simulatsioon c#-is
 
 ## Kirjeldus
-# Projektis saate:
+### Projektis saate:
 *
 
 ## Getting Started
