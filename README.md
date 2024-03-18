@@ -1,5 +1,5 @@
 ## Sisukord
-1. [Kohviautomaat](https://github.com/AntonBuivol/Arvutid/blob/main/README.md#projekti-kohta)
+1. [Kohviautomaat](https://github.com/OleksandrBohatyrov/Kohviautomaat2/blob/main/README.md#kohviautomaat)
   2. [Kirjeldus](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#colorredkirjeldus)
   3. [Valmistatud koos](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#valmistatud-koos)
   4. [Veebisait](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#colorgreenveebisait)
