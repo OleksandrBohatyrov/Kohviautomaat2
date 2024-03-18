@@ -1,9 +1,9 @@
 ## Sisukord
 1. [Kohviautomaat](https://github.com/AntonBuivol/Arvutid/blob/main/README.md#projekti-kohta)
- - 2. [Kirjeldus](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#colorredkirjeldus)
- - 3. [Valmistatud koos](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#valmistatud-koos)
- - 4. [Veebisait](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#colorgreenveebisait)
- - 5. [Koodinäidised](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#koodi-n%C3%A4ididsed)
+  2. [Kirjeldus](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#colorredkirjeldus)
+  3. [Valmistatud koos](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#valmistatud-koos)
+  4. [Veebisait](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#colorgreenveebisait)
+  5. [Koodinäidised](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#koodi-n%C3%A4ididsed)
 
 # Kohviautomaat
 
