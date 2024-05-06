@@ -2,6 +2,9 @@
 if (isset($_GET['code'])) {
     die(highlight_file(__FILE__, 1));
 }
+function Punkte() {
+    echo "Topsepaki ei saa vähendada, kuna topsejuua on juba 0 või negatiivne..";
+}
 require_once('conf2.php');
 session_start();
 
@@ -18,7 +21,7 @@ if (isset($_REQUEST["kohv"])) {
         $kask->bind_param("i", $id);
         $kask->execute();
     } else {
-        echo "Punkte ei saa vähendada, kuna topsejuua on juba 0 või negatiivne.";
+        Punkte();
     }
 
     header("Location: $_SERVER[PHP_SELF]");
@@ -36,10 +39,34 @@ if (isset($_REQUEST["kohv_"])) {
         $kask->bind_param("i", $id);
         $kask->execute();
     } else {
-        echo "Punkte ei saa vähendada, kuna topsejuua on juba 0 või negatiivne.";
+        Punkte();
     }
 
-    header("Location: $_SERVER[PHP_SELF]");
+}
+
+if (isset($_REQUEST["raspak"])) {
+    global $yhendus;
+    $id = $_REQUEST["raspak"];
+
+    $currentTopsejuua = getCurrentTopsejuua($id);
+    $getCurrentTopsepak = getCurrentTopsepak($id);
+
+
+    if ($getCurrentTopsepak <= 0) {
+        echo "<p>Topsepakkis Lõppenud";
+    }
+    if ($getCurrentTopsepak >= 1) {
+        if ($currentTopsejuua >= 0) {
+            $kask = $yhendus->prepare("UPDATE kohviautomaat SET topsepakis = topsepakis - 1 WHERE id=?");
+            $kask->bind_param("i", $id);
+            $kask->execute();
+            $kask2 = $yhendus->prepare("UPDATE kohviautomaat SET topsejuua  = topsejuua + 50 WHERE id=?");
+            $kask2->bind_param("i", $id);
+            $kask2->execute();
+        }
+    }
+
+
 }
 function getCurrentTopsejuua($id)
 {
@@ -53,23 +80,34 @@ function getCurrentTopsejuua($id)
 
     return $currentTopsejuua;
 }
+function getCurrentTopsepak($id)
+{
+    global $yhendus;
+    $kask = $yhendus->prepare("SELECT topsepakis FROM kohviautomaat WHERE id = ?");
+    $kask->bind_param("i", $id);
+    $kask->execute();
+    $kask->bind_result($getCurrentTopsepak);
+    $kask->fetch();
+    $kask->close();
+
+    return $getCurrentTopsepak;
+}
 
 
 
+if(isset($_REQUEST["kustuta"])){
+    global $yhendus;
+    $kask = $yhendus->prepare("DELETE FROM tantsud WHERE id=?");
+    $kask->bind_param("i", $_REQUEST["kustuta"]);
+    $kask->execute();
+    header("Location: $_SERVER[PHP_SELF]");
+}
 
-    if(isset($_REQUEST["kustuta"])){
-        global $yhendus;
-        $kask = $yhendus->prepare("DELETE FROM tantsud WHERE id=?");
-        $kask->bind_param("i", $_REQUEST["kustuta"]);
-        $kask->execute();
-        header("Location: $_SERVER[PHP_SELF]");
-    }
 
-
-    function isAdmin(){
-        return isset($_SESSION['onAdmin']) && $_SESSION['onAdmin'] == 1;
-    }
-    ?>
+function isAdmin(){
+    return isset($_SESSION['onAdmin']) && $_SESSION['onAdmin'] == 1;
+}
+?>
 
     <!doctype html>
     <html lang="en">
@@ -79,7 +117,7 @@ function getCurrentTopsejuua($id)
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Tantsud tähtedega</title>
+        <title>Kohviautomaat</title>
         <script>
             function closeModal() {
                 window.opener.location.reload();
@@ -114,7 +152,7 @@ function getCurrentTopsejuua($id)
             }
         </script>
     </head>
-        <?php
+      <?php //Nav menu require
         require ('nav.php');
         ?>
     <body>
@@ -123,7 +161,7 @@ function getCurrentTopsejuua($id)
             <div class="modal__window">
                 <a class="modal__close" href="#">X</a>
                 <?php
-                require 'login.php';
+                require 'login.php'; //login menu require
                 ?>
             </div>
         </div>
@@ -131,19 +169,23 @@ function getCurrentTopsejuua($id)
             <div class="modal__window">
                 <a class="modal__close" href="#">X</a>
                 <?php
-                require 'register.php';
+                require 'register.php'; //register menu require
                 ?>
             </div>
         </div>
-    <?php
-    if(isset($_SESSION["kasutaja"])) {
-
-
-        ?>
-
     <div class="container">
-    <h1>Tantsud tähtedega</h1>
-    <h2>Punktide lisamine</h2>
+    <?php
+    if(!isset($_SESSION["kasutaja"])) {
+        echo "<h1 style='text-align: center;color: #ff0000;
+        text-shadow: 0 0 20px #ff0000;'>Kohviautomaat</h1>";
+        echo "<p class='kohv'><strong>Tere, tere.</strong> See on kohviautomaat. Siit saad sa jooki tellida. <br>Sortimendis on sellised joogid nagu tee, kohv, kakao. <br>Kui aga soovite juhtida automaati, siis on <strong>kasutajanimi 'admin', parool on 'sasa'.</strong> <br> Selleks, et kasutada, pead sa sisse astuma.</p>";
+        echo "<img src='kohv.jpg' alt='Italian Trulli'>";
+    }
+    ?>
+    <?php
+if (isset($_SESSION["kasutaja"])) {
+    ?>
+    <h1>Kohviautomaat</h1>
     <table>
         <tr>
             <th>
@@ -156,39 +198,31 @@ function getCurrentTopsejuua($id)
                 Topsejuua
             </th>
             <th>
-                Lisa
+                
             </th>
         </tr>
         <?php
         global $yhendus;
-        $kask=$yhendus->prepare("SELECT id, joohinimi, topsepakis, topsejuua FROM kohviautomaat");
+        $kask = $yhendus->prepare("SELECT id, joohinimi, topsepakis, topsejuua FROM kohviautomaat");
         $kask->bind_result($id, $joohinimi, $topsepakis, $topsejuua);
         $kask->execute();
-        while($kask->fetch()){
+        while ($kask->fetch()) {
             echo "<tr>";
-            $joohinimi=htmlspecialchars($joohinimi);
-            echo "<td>".$joohinimi."</td>";
-            echo "<td>".$topsepakis."</td>";
-            echo "<td>".$topsejuua."</td>";
-            if (!isAdmin()) {
-
-
-                echo "<td><a href='?kohv_=$id'>Lisa -1 punkt</a></td>";
+            $joohinimi = htmlspecialchars($joohinimi);
+            echo "<td>" . $joohinimi . "</td>";
+            echo "<td>" . $topsepakis . "</td>";
+            echo "<td>" . $topsejuua . "</td>";
+            if (!isAdmin()) { //if admin show button
+                echo "<td><a href='?kohv_=$id'>Osta 1</a></td>";
+            } else {
+                echo "<td><a href='?raspak=$id'>Lahti pakkimine</a></td>";
             }
-            else {
-                echo "<td><a href='?kohv=$id'>Lisa +1 punkt</a></td>";
-            }
-
         }
-
         ?>
-
     </table>
-    </div>
     <?php
-    }
-
-
-    ?>
+    Punkte();
+}
+?>
     </body>
     </html>
