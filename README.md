@@ -1,3 +1,18 @@
+# GIT CMD Arvestustöö
+1. Selle foto keskel. ![pilt](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/5831f7e4-bcf0-4f94-a473-f8db11a481d1)
+2. Muuda kirjastiili mis tahes kirjastiili, mida soovid. ![pilt](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/20a2feae-b3fb-41ba-9e56-28f904a9170a)
+3. Muuda vormiriietuse värve. ![pilt](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/87f7190d-a1ca-412a-951e-8d0914c4b550)
+4. Kasutaja leht. Muuda koodi, et osta 1 asemel 10. ![pilt](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/384d3d38-e540-42e0-b8d8-ab5f33a8df93)
+5. Asetage nupud 1 reas üksteise taha. ![pilt](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/5fca48c7-d4f8-4994-b3b0-e584061f28d6)
+6. Eemaldage paroolide kontroll. ![pilt](https://github.com/OleksandrBohatyrov/Kohviautomaat2/assets/120181397/ec58f48b-05c5-4652-959b-2d5fa1750515)
+
+
+
+
+
+   
+
+
 ## Sisukord
 1. [Kohviautomaat](https://github.com/OleksandrBohatyrov/Kohviautomaat2/blob/main/README.md#kohviautomaat)
   2. [Kirjeldus](https://github.com/OleksandrBohatyrov/Kohviautomaat2?tab=readme-ov-file#colorredkirjeldus)
