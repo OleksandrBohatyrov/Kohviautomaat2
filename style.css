@@ -315,3 +315,9 @@ textarea{
     visibility: hidden;
     opacity: 0;
 }
+
+.kohv {
+    font-family: "Jaini", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    }
