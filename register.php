@@ -37,7 +37,7 @@ if (isset($_POST['registerBtn'])){
             // make sure the two passwords match
             if ($passwd === $passwd_again){
                 // make sure the password meets the min strength requirements
-                if ( strlen($passwd) >= 5 && strpbrk($passwd, "!#$.,:;()")){
+                //if ( strlen($passwd) >= 5 && strpbrk($passwd, "!#$.,:;()")){
                     // insert the user into the database
                     mysqli_query($yhendus, "INSERT INTO kasutaja (kasutaja, parool) VALUES ('$username', '$passwd_hashed')");
                     //echo "<script>alert('rrrr')</script>";
@@ -50,9 +50,9 @@ if (isset($_POST['registerBtn'])){
 //echo "<script>alert('yay')</script>";
                         $success = true;
                     }
-                }
-                else
-                    $error_msg = 'Your password is not strong enough. Please use another.';
+                //}
+                //else
+                    //$error_msg = 'Your password is not strong enough. Please use another.';
             }
             else
                 $error_msg = 'Your passwords did not match.';
@@ -95,9 +95,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="">
             <input type="password" name="passwd" value="" placeholder="enter a password" autocomplete="off" required />
         </div>
-        <div class="">
+        <!--<div class="">
             <p>password must be at least 5 characters and<br /> have a special character, e.g. !#$.,:;()</font></p>
-        </div>
+        </div>-->
         <div class="">
             <input type="password" name="passwd_again" value="" placeholder="confirm your password" autocomplete="off" required />
         </div>
