@@ -26,9 +26,12 @@ if (!function_exists('isAdmin')) {
                     <?php
                 } else {
                     ?>
-                    <div style="background-color: #333;">
-                    <a style='display: inline'; href="#modal_log" onclick="avaModalLog()">Logi sisse</a>
-                    <a href="#modal_reg" onclick="avaModalReg()">Registreerimine</a></div>
+                    <div style="background-color: #333; position: initial; float: right">
+                    <a href="#modal_log" onclick="avaModalLog()">Logi sisse</a>
+                    </div>
+                    <div style="background-color: #333; position: relative; float: right">
+                    <a href="#modal_reg" onclick="avaModalReg()">Registreerimine</a>
+                    </div>
                     <?php
                 }
                 ?>
