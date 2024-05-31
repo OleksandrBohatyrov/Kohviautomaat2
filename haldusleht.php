@@ -35,7 +35,7 @@ if (isset($_REQUEST["kohv_"])) {
     $currentTopsejuua = getCurrentTopsejuua($id);
 
     if ($currentTopsejuua > 0) {
-        $kask = $yhendus->prepare("UPDATE kohviautomaat SET topsejuua = topsejuua - 1 WHERE id=?");
+        $kask = $yhendus->prepare("UPDATE kohviautomaat SET topsejuua = topsejuua - 10 WHERE id=?");
         $kask->bind_param("i", $id);
         $kask->execute();
     } else {
@@ -213,7 +213,7 @@ if (isset($_SESSION["kasutaja"])) {
             echo "<td>" . $topsepakis . "</td>";
             echo "<td>" . $topsejuua . "</td>";
             if (!isAdmin()) { //if admin show button
-                echo "<td><a href='?kohv_=$id'>Osta 1</a></td>";
+                echo "<td><a href='?kohv_=$id'>Osta 10</a></td>";
             } else {
                 echo "<td><a href='?raspak=$id'>Lahti pakkimine</a></td>";
             }
