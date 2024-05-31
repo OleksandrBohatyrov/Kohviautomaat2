@@ -163,16 +163,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["jooginimi"], $_POST["t
     }
     ?>
 
-    <form action="" method="post">
-        <label for="jooginimi">Lisa uus jooginimi</label>
-        <input type="text" name="jooginimi" id="jooginimi" style="width: 15%">
-        <label for="jooginimi">Lisa topsepakis</label>
-        <input type="number" name="topsepakis" id="topsepakis" style="width: 15%">
-        <label for="jooginimi">Lisa topsejuua</label>
-        <input type="number" name="topsejuua" id="topsejuua" style="width: 15%">
-        <br>
-        <input type="submit" value="Lisa jooginimi" style="width: 15%">
-    </form>
+        <div style="background-color: darkcyan">
+        <form action="" method="post">
+            <label for="jooginimi">Lisa uus jooginimi</label>
+            <input type="text" name="jooginimi" id="jooginimi" style="width: 15%">
+            <label for="jooginimi">Lisa topsepakis</label>
+            <input type="number" name="topsepakis" id="topsepakis" style="width: 15%">
+            <label for="jooginimi">Lisa topsejuua</label>
+            <input type="number" name="topsejuua" id="topsejuua" style="width: 15%">
+            <br>
+            <input type="submit" value="Lisa jooginimi" style="width: 15%">
+        </form>
+    </div>
 
 </table>
 
